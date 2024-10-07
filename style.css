@@ -27,3 +27,17 @@ h2 {
 p {
     font-size: 16px;
 }
+.nav {
+    background-color: #ffcc00;
+    padding: 10px;
+    text-align: center;
+}
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.nav a:hover {
+    text-decoration: underline;
+}
