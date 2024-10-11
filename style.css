@@ -63,17 +63,15 @@ ul {
 }
 
 .img {
+    column-gap: grey;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 10px; /* Space between the images */
     background-color: lightblue;
     width: 100%;
 }
 
-.img img {
-    width: 100%; /* Ensures images fill the column */
-    height: 100px; /* Set a fixed height for uniformity */
-    object-fit: cover; /* Crop images to maintain aspect ratio */
+.column img {
+    max-width: 100px;
+    height: auto;
 }
 
 .row {
@@ -85,4 +83,20 @@ ul {
 .column {
     background-color: antiquewhite;
     width: 100px;
+}
+
+.activity-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.activity-container img {
+    max-width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.activity-container p {
+    margin: 5px 0;
 }
