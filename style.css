@@ -51,7 +51,7 @@ nav a {
 
 h1 {
     margin-left: 30px;
-    color: plum;
+    color: palevioletred;
 }
 
 ul {
@@ -63,15 +63,17 @@ ul {
 }
 
 .img {
-    column-gap: grey;
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px; /* Space between the images */
     background-color: lightblue;
     width: 100%;
 }
 
-.column img {
-    max-width: 100px;
-    height: auto;
+.img img {
+    width: 100%; /* Ensures images fill the column */
+    height: 100px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Crop images to maintain aspect ratio */
 }
 
 .row {
@@ -83,9 +85,4 @@ ul {
 .column {
     background-color: antiquewhite;
     width: 100px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }
